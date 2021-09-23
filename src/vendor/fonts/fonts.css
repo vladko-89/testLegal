@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./futura_pt_bold.woff2") format("woff2"),
+  url("./futura_pt_bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./proxima_nova_regular.woff2") format("woff2"),
+  url("./proxima_nova_regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./proxima_nova_semibold.woff2") format("woff2"),
+  url("./proxima_nova_semibold.woff") format("woff");
+}

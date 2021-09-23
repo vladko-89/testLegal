@@ -1,0 +1,125 @@
+.button-container {
+  position: relative;
+  width: 100%;
+}
+
+.button {
+  padding: 8px 16px;
+
+  font-family: 'Proxima Nova', serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  border-radius: 3px;
+
+  border: none;
+  transition: opacity 0.5s, linear, 1s;
+
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.button_color {
+  background-color: rgb(52, 152, 219);
+
+  color: rgb(255, 255, 255);
+}
+
+.button_transparent {
+  color: rgba(0, 0, 0, 0.8);
+
+  background-color: transparent;
+
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  transition: opacity 0.5s, linear, 0.5s;
+}
+
+.tooltip {
+
+  position: absolute;
+  bottom: -45px;
+  left: -50%;
+  z-index: 20;
+
+  padding-top: 15px;
+  width: 211px;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+
+}
+
+.button-container:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip__content {
+  position: absolute;
+
+  padding: 16px;
+  max-width: 177px;
+  min-width: 177px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.tooltip__content::after {
+  content: "";
+
+  position: absolute;
+  top: -8px;
+  right: 12px;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: #ffffff;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  transform: rotate(-45deg);
+}
+
+.tooltip__text {
+  margin-bottom: 12px;
+
+  font-family: "Proxima Nova", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.tooltip__link {
+  font-family: "Proxima Nova", serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(52, 152, 219);
+
+  text-decoration: none;
+}
+
+.tooltip__link:hover {
+  color: rgba(52, 152, 219, 0.6);
+}
+
+@media (max-width: 632px) {
+  .button {
+    min-width: 126px;
+  }
+}
